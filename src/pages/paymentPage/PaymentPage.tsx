@@ -33,7 +33,7 @@ export const PaymentPage: React.FC = () => {
     const validateForm = (): FormErrors => {
         const errors: FormErrors = {};
         const regexNumber = /^[0-9 ]+$/;
-        const regexMonth = /^[0-9/]+$/;
+        const regexMonth = /^(0[1-9]|1[0-2])\/([0-9]{2})$/;
 
         if (!cardNumber) {
             errors.cartNumber = "пустое поле";

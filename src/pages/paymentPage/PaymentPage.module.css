@@ -56,12 +56,14 @@
 
 .cartNumber {
     max-width: 400px; /* Сделаем поле для номера карты шире */
+    min-width: 200px;
 }
 
 /* Поля ввода месяца и CVC */
 .month,
 .cvc {
     width: 48%;
+    min-width: 100px;
     align-self: center;
 }
 
