@@ -78,3 +78,9 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media (max-width: 760px) {
+    .modalImage{
+        height: 200px;
+    }
+}
