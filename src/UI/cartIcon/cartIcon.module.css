@@ -1,0 +1,30 @@
+.cartIcon {
+    width: 22px;
+    height: 20px;
+    color: #838383;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    border:none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #EAEAEA;
+    padding:2px;
+    text-decoration-line: none;
+}
+
+.itemCount {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: orange;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,44 @@
+/* Общие стили */
+.productWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #838383;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .productWrapper {
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+}

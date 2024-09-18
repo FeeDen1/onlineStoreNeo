@@ -1,0 +1,157 @@
+/* Общие стили */
+
+/* Контейнер */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    padding: 40px; /* Увеличим отступы */
+}
+
+/* Контейнер оплаты */
+.paymentContainer {
+    position: relative;
+    background: linear-gradient(135deg, rgba(39, 150, 206, 1), rgba(26, 75, 99, 1));
+    padding: 50px; /* Увеличим внутренний отступ */
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 700px; /* Увеличим ширину */
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Заголовок оплаты */
+.paymentTitle {
+    font-weight: 700;
+    font-size: 32px; /* Увеличим шрифт заголовка */
+    margin-bottom: 30px; /* Увеличим отступ снизу */
+    color: #000;
+    text-align: center;
+}
+
+/* Поле ввода номера карты */
+.cartNumber,
+.month,
+.cvc {
+    text-align: center;
+    border: none;
+    background: rgba(255, 255, 255, 0.9); /* Сделаем поле чуть ярче */
+    height: 60px; /* Увеличим высоту */
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 18px; /* Увеличим шрифт */
+    font-family: 'Consolas', monospace;
+    margin-bottom: 5px; /* Увеличим отступы */
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    justify-self: flex-end;
+}
+
+.cartNumber {
+    max-width: 400px; /* Сделаем поле для номера карты шире */
+}
+
+/* Поля ввода месяца и CVC */
+.month,
+.cvc {
+    width: 48%;
+    align-self: center;
+}
+
+.month {
+    margin-right: 20px;
+}
+
+/* Контейнер для информации о карте */
+.cartInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+    gap: 20px;
+
+}
+
+
+.pay {
+    width: 100%;
+
+    height: 60px;
+    border-radius: 15px;
+    background-color: #1b4f68;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 40px;
+}
+
+.pay:hover {
+    background-color: #143b4f;
+    transform: translateY(-3px);
+}
+
+
+.paid {
+    background-color: #2690c5;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.spanNumber,
+.spanMonth,
+.spanCvc {
+    color: #ff6b6b;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* Flex-контейнеры */
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColumnCenter {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ошибки */
+.errorMessage {
+    color: red;
+    font-size: 16px;
+
+    text-align: center;
+}
